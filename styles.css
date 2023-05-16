@@ -1,0 +1,135 @@
+.table,
+th,
+td {
+  border: solid black 1px;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #eff6ff;
+}
+
+.header {
+  text-align: left;
+  color: white;
+  background-color: #2563eb;
+  box-shadow: 0px 3px 5px;
+  margin-bottom: 20px;
+  display: flex;
+  padding: 10px;
+  align-items: center;
+}
+
+.bookshelf {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: absolute;
+  margin: 2rem;
+  top: 10%;
+  left: 15%;
+}
+
+.book {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  width: 250px;
+  height: 300px;
+  margin: 2rem;
+  text-align: center;
+  border: solid 2px #2563eb;
+  border-radius: 2px;
+  background-color: lightskyblue;
+}
+
+input,
+label {
+  display: block;
+}
+
+#new-book {
+  border: none;
+  outline: none;
+  font-size: 1.8rem;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: var(--white);
+  background: var(--blue);
+  transition: 0.5s ease;
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  background-color: #2563eb;
+}
+
+.book h2 {
+  background-color: #2563eb;
+  color: antiquewhite;
+}
+
+.book h3 {
+  margin: 0.5rem;
+  color: black;
+  flex-grow: 1;
+}
+
+.update {
+  display: inline-block;
+  background-color: #3b82f6;
+  width: 100%;
+  color: white;
+  height: 40px;
+  padding: 0;
+  border: none;
+  margin-bottom: -5px;
+}
+
+.trash {
+  background-color: #3b82f6;
+  width: 100%;
+  color: white;
+  height: 40px;
+  padding: 0;
+  border: none;
+  margin-top: -5px;
+  border-top: 1px white solid;
+}
+
+.popup {
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  height: 300px;
+  width: 250px;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin: 200px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 4rem;
+  gap: 10px;
+  border: 5px solid #3b82f6;
+}
+
+.close {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  transform: rotate(45deg);
+}
+
+#form {
+}
